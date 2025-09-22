@@ -7,7 +7,11 @@ const skillData = [
   {name: 'Spring Boot', value: 70},
   {name: 'Node.js', value: 75},
   {name: 'MySQL', value: 75},
+  {name: 'C++', value: 85},
   {name: 'Java', value: 78},
+  {name: 'Python', value: 65},
+  {name: 'Django', value: 60},
+  {name: 'PHP', value: 60},
 ]
 
 export default function Skills(){
