@@ -4,28 +4,16 @@ import { FiShield, FiLock, FiCheck } from "react-icons/fi";
 
 const certs = [
   {
-    title: "AWS Academy Cloud Foundations",
-    org: "AWS Academy",
-    date: "Jun 2025",
-    hash: "SHA-256: f11e9a2b3c4d5e6f2178da8a48b",
+    title: "Spring Boot From Scratch For Beginners",
+    org: "Udemy",
+    date: "Jul 2025",
+    hash: "SHA-256: d8b2c48ea92a11b6f0e9fa5c4d6",
   },
   {
-    title: "Modern JavaScript & Java OOP",
+    title: "Modern JavaScript for React Developer - Zero to Advanced",
     org: "Udemy",
     date: "Jun 2025",
     hash: "SHA-256: 4e91b6b5dfd4f6d8a20bb291a13",
-  },
-  {
-    title: "Python Essentials & Cyber Security",
-    org: "Cisco Networking Academy",
-    date: "May 2025",
-    hash: "SHA-256: b2a8d11c78eb35cf711d9f8c12a",
-  },
-  {
-    title: "Red Hat Enterprise Linux 8 Essential",
-    org: "LinkedIn Learning",
-    date: "Dec 2024",
-    hash: "SHA-256: a8c2e912bc834fdee1988ff45da",
   },
 ];
 

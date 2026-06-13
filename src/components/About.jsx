@@ -59,14 +59,14 @@ export default function About({ theme }) {
             <span className="text-indigo-400 font-bold">CREATE TABLE</span> developer_details ({"\n"}
             {"  "}id <span className="text-indigo-400 font-bold">INT AUTO_INCREMENT PRIMARY KEY</span>,{"\n"}
             {"  "}full_name <span className="text-indigo-400 font-bold">VARCHAR</span>(<span className="text-amber-500">100</span>) <span className="text-indigo-400 font-bold">NOT NULL</span>,{"\n"}
-            {"  "}active_internship <span className="text-indigo-400 font-bold">VARCHAR</span>(<span className="text-amber-500">100</span>),{"\n"}
-            {"  "}location <span className="text-indigo-400 font-bold">VARCHAR</span>(<span className="text-amber-500">100</span>){"\n"}
+            {"  "}active_company <span className="text-indigo-400 font-bold">VARCHAR</span>(<span className="text-amber-500">100</span>),{"\n"}
+            {"  "}role <span className="text-indigo-400 font-bold">VARCHAR</span>(<span className="text-amber-500">100</span>){"\n"}
             );{"\n"}
             {"\n"}
             <span className="text-indigo-400 font-bold">INSERT INTO</span> developer_details {"\n"}
-            {"  "}(full_name, active_internship, location){"\n"}
+            {"  "}(full_name, active_company, role){"\n"}
             <span className="text-indigo-400 font-bold">VALUES</span> ({"\n"}
-            {"  "}<span className="text-emerald-400">'Aman Kumar'</span>, <span className="text-emerald-400">'CodeAlpha'</span>, <span className="text-emerald-400">'Ghaziabad, Delhi-NCR'</span>{"\n"}
+            {"  "}<span className="text-emerald-400">'Aman Kumar'</span>, <span className="text-emerald-400">'Webkul Software'</span>, <span className="text-emerald-400">'Trainee Software Engineer'</span>{"\n"}
             );
           </code>
         );
@@ -168,14 +168,14 @@ export default function About({ theme }) {
                 }`} />
                 <div className="font-bold text-slate-200">MCA (Master of Computer Applications)</div>
                 <div className="text-slate-400">KIET Group of Institutions, Ghaziabad</div>
-                <div className={`text-[10px] ${activeColor} font-mono mt-0.5`}>[ 2024 - 2026 ] · Present</div>
+                <div className={`text-[10px] ${activeColor} font-mono mt-0.5`}>[ 2024 - 2026 ] · CGPA: 8.24/10</div>
               </div>
 
               <div className="border-l-2 border-slate-700 pl-3 py-0.5 relative">
                 <span className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-slate-900 border-2 border-slate-600" />
                 <div className="font-bold text-slate-200">BCA (Bachelor of Computer Applications)</div>
                 <div className="text-slate-400">Maharaja College, Ara</div>
-                <div className="text-[10px] text-slate-500 font-mono mt-0.5">[ 2021 - 2024 ] · GPA: 8.4/10</div>
+                <div className="text-[10px] text-slate-500 font-mono mt-0.5">[ 2021 - 2024 ] · Score: 69.1%</div>
               </div>
 
               <div className="border-l-2 border-slate-700 pl-3 py-0.5 relative">

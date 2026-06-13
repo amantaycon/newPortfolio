@@ -91,30 +91,25 @@ export default function Hero({ theme }) {
         break;
       case "skills":
         response.push(
-          "Languages: Java, C++, JavaScript, Python, SQL, PHP",
-          "Backend:   Spring Boot, Node.js, Express, Django, REST APIs",
-          "Frontend:  React, HTML5, CSS3, Tailwind CSS",
-          "Databases: MySQL, PostgreSQL"
+          "Languages: Java, C++, JavaScript, Python, SQL",
+          "Backend:   Spring Boot, Hibernate (JPA), REST APIs, JWT, WebSocket, Microservices, Kafka, Redis",
+          "Frontend:  React.js, HTML, CSS, JavaScript, Tailwind CSS",
+          "Databases: MySQL, PostgreSQL, MongoDB",
+          "Tools:     Git, GitHub, Docker, Postman, GitLab"
         );
         break;
       case "projects":
         response.push(
           "Active Deployments:",
-          "  - TimeCoins: Spring Boot wallet & messenger.",
-          "  - Cereal Hub: React/Django E-commerce platform.",
-          "  - DSA Trainer: Node/MySQL learning platform.",
-          "  - CodeKing: Real-time chat & social hub for devs.",
+          "  - TimeCoins: Spring Boot wallet & messaging platform.",
+          "  - DSA Trainer: Node.js/MongoDB DSA learning platform.",
+          "  - CodeKing: Social platform for coders.",
           "Type 'curl <project_name>' to view repo (e.g. 'curl timecoins')."
         );
         break;
       case "curl timecoins":
         response.push("Opening Repository link for TimeCoins...");
         window.open("https://github.com/amantaycon/TimeCoins", "_blank");
-        break;
-      case "curl cereal_hub":
-      case "curl cereal":
-        response.push("Opening Repository link for Cereal Hub...");
-        window.open("https://github.com/amantaycon/Cereal_Hub/", "_blank");
         break;
       case "curl dsatrainer":
       case "curl dsa":
@@ -138,7 +133,7 @@ export default function Hero({ theme }) {
       case "contact":
         response.push(
           "CONTACT ENDPOINTS:",
-          "  Email: aman.2426mca1782@kiet.edu",
+          "  Email: amantaycon@gmail.com",
           "  Phone: +91 9334626132",
           "  Location: Delhi-NCR, Ghaziabad",
           "  Profiles: github.com/amantaycon | linkedin.com/in/amantaycon"
@@ -274,7 +269,7 @@ export default function Hero({ theme }) {
           <div className="flex flex-col items-center">
             <FiCpu className={`text-lg mb-1 ${activeColor}`} />
             <span className="text-[10px] text-slate-500 uppercase font-bold">Algorithms</span>
-            <span className="text-sm font-bold text-slate-200">500+ Solved</span>
+            <span className="text-sm font-bold text-slate-200">250+ Solved</span>
           </div>
           <div className="flex flex-col items-center border-x border-slate-800/60">
             <FiDatabase className={`text-lg mb-1 ${activeColor}`} />
@@ -310,7 +305,7 @@ export default function Hero({ theme }) {
               <FiLinkedin />
             </a>
             <a
-              href="mailto:aman.2426mca1782@kiet.edu"
+              href="mailto:amantaycon@gmail.com"
               className="p-2.5 rounded bg-slate-900 border border-slate-800 hover:border-slate-600 text-slate-300 hover:text-white transition-all"
               title="Email Developer"
             >

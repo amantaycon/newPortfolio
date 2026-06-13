@@ -1,31 +1,24 @@
 const projects = [
   {
-    title: "TimeCoins — Wallet & Messaging",
-    desc: "Spring Boot backend with wallet and share-mapped coin. Messaging with coin transfers.",
-    tags: ["Spring Boot","React","MySQL"],
+    title: "TimeCoins — Wallet & Messaging Platform",
+    desc: "A secure wallet system with JWT authentication, real-time messaging via WebSocket, and concurrent transaction management using Hibernate (@Transactional). Integrated PayPal Sandbox for wallet top-up.",
+    tags: ["Spring Boot", "React.js", "MySQL", "WebSocket", "JWT"],
     link: "https://github.com/amantaycon/TimeCoins",
     cat: "Fullstack"
   },
   {
-    title: "Cereal Hub — E-commerce",
-    desc: "Responsive shopping platform with auth, cart and checkout.",
-    tags: ["React","Django","REST"],
-    link: "https://github.com/amantaycon/Cereal_Hub/",
-    cat: "Web"
-  },
-  {
-    title: "DSA TRAINER",
-    desc: "Platform for learning DSA with challenges and interview resources.",
-    tags: ["JavaScript","Node","MySQL"],
+    title: "DSA TRAINER — DSA Learning Platform",
+    desc: "A learning platform featuring topic-wise DSA problems, solutions, and interview preparation modules with efficient REST APIs for content management.",
+    tags: ["Node.js", "Express.js", "MongoDB", "REST API"],
     link: "https://github.com/amantaycon/DsaTrainer",
     cat: "Backend"
   },
   {
-    title: "CodeKing — Social for Coders",
-    desc: "Social platform enabling posts, profiles and real-time chat.",
-    tags: ["Node","Express","MySQL"],
+    title: "CodeKing — Social Platform for Coders",
+    desc: "A social media platform supporting posts (images, videos, snippets) and interactions (likes, comments, saves) alongside a real-time chat workspace and optimized db queries.",
+    tags: ["Node.js", "Express.js", "MySQL", "JavaScript", "WebSocket"],
     link: "https://github.com/amantaycon/CodeKing",
-    cat: "Fullstack"
+    cat: "Web"
   }
 ]
 
