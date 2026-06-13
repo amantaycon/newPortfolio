@@ -16,7 +16,7 @@ const BOOT_LOGS = [
   "",
   "INFO 1782 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized on port(s): 8080 (http)",
   "INFO 1782 --- [           main] c.a.portfolio.PortfolioApplication       : Starting PortfolioApplication on AMAN-DEV-BOX",
-  "INFO 1782 --- [           main] c.a.portfolio.PortfolioApplication       : Active profiles: hacker, spring-boot",
+  "INFO 1782 --- [           main] c.a.portfolio.PortfolioApplication       : Active profiles: java, spring-boot, fullstack",
   "INFO 1782 --- [           main] c.a.portfolio.services.DataService       : Initializing Aman's developer profile...",
   "INFO 1782 --- [           main] c.a.portfolio.services.DataService       : Loading active projects & microservices...",
   "INFO 1782 --- [           main] c.a.portfolio.PortfolioApplication       : Started PortfolioApplication in 1.25s (JVM running for 1.8s)",

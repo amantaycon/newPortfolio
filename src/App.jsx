@@ -52,7 +52,7 @@ export default function App() {
             </div>
             <div className="hidden md:flex items-center gap-3 text-xs text-slate-500 border-l border-slate-800 pl-3">
               <div>PORT: <span className="text-slate-300">8080</span></div>
-              <div>PROFILES: <span className={theme === 'matrix' ? 'text-matrix-green' : 'text-cyber-cyan'}>hacker,spring-boot</span></div>
+              <div>PROFILES: <span className={theme === 'matrix' ? 'text-matrix-green' : 'text-cyber-cyan'}>java,spring-boot,fullstack</span></div>
               <div>DB_CONN: <span className="text-emerald-500">ACTIVE</span></div>
             </div>
           </div>
