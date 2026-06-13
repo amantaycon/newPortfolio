@@ -15,6 +15,36 @@ const certs = [
     date: "Jun 2025",
     hash: "SHA-256: 4e91b6b5dfd4f6d8a20bb291a13",
   },
+  {
+    title: "AWS Academy Graduate — AWS Academy Cloud Foundations",
+    org: "AWS Academy",
+    date: "Jun 2025",
+    hash: "SHA-256: a8b3c9d2f1e0a789bcde341f20a",
+  },
+  {
+    title: "Cisco Cybersecurity Essentials",
+    org: "Cisco Networking Academy",
+    date: "May 2025",
+    hash: "SHA-256: 8f3c7b2a1a8c9e5d4d3b2f1a0e9",
+  },
+  {
+    title: "Red Hat Enterprise Linux 8 Essential Training",
+    org: "Red Hat",
+    date: "Dec 2023",
+    hash: "SHA-256: 8c7b6a5d4e3f2a1b0c9d8e7f6a5",
+  },
+  {
+    title: "Python Essentials 2",
+    org: "Cisco / Python Institute",
+    date: "May 2025",
+    hash: "SHA-256: e8d7c6b5a4938271605b4a39281",
+  },
+  {
+    title: "Software Engineering Intern Certification",
+    org: "CodeAlpha",
+    date: "Aug 2025",
+    hash: "SHA-256: f1e2d3c4b5a69788766a5b4c3d2",
+  },
 ];
 
 export default function Certs({ theme }) {
