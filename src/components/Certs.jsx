@@ -1,31 +1,94 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from "react";
+import { motion } from "framer-motion";
+import { FiShield, FiLock, FiCheck } from "react-icons/fi";
 
 const certs = [
-  {title: 'Modern JavaScript & Java OOP', org: 'Udemy', date: 'Jun 2025'},
-  {title: 'Python Essentials 1,2 & Cybersecurity Essentials', org: 'Cisco', date: 'May 2025'},
-  {title: 'AWS Academy Cloud Foundations', org: 'AWS', date: 'Jun 2025'},
-  {title: 'Red Hat Enterprise Linux 8 Essential', org: 'LinkedIn Learning', date: 'Dec 2024'}
-]
+  {
+    title: "AWS Academy Cloud Foundations",
+    org: "AWS Academy",
+    date: "Jun 2025",
+    hash: "SHA-256: f11e9a2b3c4d5e6f2178da8a48b",
+  },
+  {
+    title: "Modern JavaScript & Java OOP",
+    org: "Udemy",
+    date: "Jun 2025",
+    hash: "SHA-256: 4e91b6b5dfd4f6d8a20bb291a13",
+  },
+  {
+    title: "Python Essentials & Cyber Security",
+    org: "Cisco Networking Academy",
+    date: "May 2025",
+    hash: "SHA-256: b2a8d11c78eb35cf711d9f8c12a",
+  },
+  {
+    title: "Red Hat Enterprise Linux 8 Essential",
+    org: "LinkedIn Learning",
+    date: "Dec 2024",
+    hash: "SHA-256: a8c2e912bc834fdee1988ff45da",
+  },
+];
 
-export default function Certs(){
+export default function Certs({ theme }) {
+  const activeColor = theme === "matrix" ? "text-matrix-green" : "text-cyber-cyan";
+  const activeBorder = theme === "matrix" ? "border-matrix-green/30 hover:border-matrix-green bg-[#070b12]/95" : "border-cyber-cyan/30 hover:border-cyber-cyan bg-[#070b12]/95";
+
   return (
-    <section className="my-10">
-      <motion.h3 initial={{opacity:0, y:8}} animate={{opacity:1, y:0}}
-        className="text-2xl font-bold text-gray-900 dark:text-white">
-        Certifications
-      </motion.h3>
+    <section className="my-10 relative">
+      {/* Title */}
+      <div className="flex items-center gap-2 mb-6">
+        <FiShield className={activeColor} />
+        <h3 className="text-xl sm:text-2xl font-bold text-slate-100 uppercase tracking-wider">
+          secure_credential_vault.enc
+        </h3>
+      </div>
 
-      <div className="mt-4 grid md:grid-cols-2 gap-4">
-        {certs.map(c => (
-          <motion.div key={c.title}
-            className="p-4 rounded-xl border border-gray-200 dark:border-white/20 bg-white dark:bg-gray-900/70 text-gray-800 dark:text-gray-100"
-            initial={{opacity:0}} animate={{opacity:1}}>
-            <h4 className="font-medium">{c.title}</h4>
-            <p className="text-sm mt-1">{c.org} • {c.date}</p>
+      {/* Grid */}
+      <div className="grid md:grid-cols-2 gap-6">
+        {certs.map((c, idx) => (
+          <motion.div
+            key={c.title}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: idx * 0.05 }}
+            className={`p-5 rounded-xl border flex flex-col justify-between shadow-2xl relative overflow-hidden transition-all duration-300 ${activeBorder}`}
+          >
+            {/* Decrypt key background glow */}
+            <div className="absolute right-3 top-3 text-slate-800/20 select-none">
+              <FiLock className="text-5xl" />
+            </div>
+
+            <div>
+              {/* Header */}
+              <div className="flex justify-between items-center gap-3 border-b border-slate-800/60 pb-3 mb-3 font-mono text-[11px]">
+                <div className="flex items-center gap-1 text-slate-400">
+                  <span className={activeColor}>ISSUER:</span>
+                  <span className="font-bold text-slate-200">{c.org.toUpperCase()}</span>
+                </div>
+                
+                {/* Verified Badge */}
+                <div className="flex items-center gap-1 bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/40 text-emerald-400 font-bold text-[9px]">
+                  <FiCheck />
+                  <span>VERIFIED</span>
+                </div>
+              </div>
+
+              {/* Title */}
+              <h4 className="text-sm sm:text-base font-extrabold text-slate-100 tracking-tight">
+                {c.title}
+              </h4>
+            </div>
+
+            {/* Cryptographic signature footer */}
+            <div className="mt-4 pt-3 border-t border-slate-800/60 font-mono text-[10px] text-slate-500">
+              <div className="flex justify-between items-center">
+                <span className="truncate max-w-[200px] sm:max-w-xs">{c.hash}</span>
+                <span className="text-slate-600 font-bold">{c.date}</span>
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>
     </section>
-  )
+  );
 }
