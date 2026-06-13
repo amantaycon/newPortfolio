@@ -19,7 +19,29 @@ const projects = [
     tags: ["Node.js", "Express.js", "MySQL", "JavaScript", "WebSocket"],
     link: "https://github.com/amantaycon/CodeKing",
     cat: "Web"
+  },
+  {
+    title: "Webkul Social Connect",
+    desc: "A custom social network assignment built during the Webkul trainee phase, featuring user profile management, dynamic feed updates, and local interactive behaviors.",
+    tags: ["JavaScript", "HTML5", "CSS3", "DOM Manipulation"],
+    link: "https://github.com/amantaycon/Social_Network_WebKul",
+    cat: "Web"
+  },
+  {
+    title: "Kiddi Cryptographic File Encrypter",
+    desc: "A password-based command-line directory and file encryptor/decryptor built in C++ featuring multi-option interactive commands, secure salt generation, and high-performance file stream processing.",
+    tags: ["C++", "Cryptography", "Security", "CLI", "File I/O"],
+    link: "https://github.com/amantaycon/Kiddi-file-encryption-base-on-password-",
+    cat: "Backend"
+  },
+  {
+    title: "Noughts & Crushes AI Engine",
+    desc: "An advanced AI game agent utilizing Minimax search optimized with Alpha-Beta pruning, heuristic state space evaluations, and intelligent move predictions.",
+    tags: ["Python", "Artificial Intelligence", "Algorithms", "Minimax"],
+    link: "https://github.com/amantaycon/Noughts-and-Crushes-using-Alpha-Beta-Pruning",
+    cat: "Backend"
   }
 ]
 
 export default projects
+

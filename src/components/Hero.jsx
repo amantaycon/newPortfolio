@@ -104,6 +104,9 @@ export default function Hero({ theme }) {
           "  - TimeCoins: Spring Boot wallet & messaging platform.",
           "  - DSA Trainer: Node.js/MongoDB DSA learning platform.",
           "  - CodeKing: Social platform for coders.",
+          "  - SocialConnect: Webkul Developer Social Network assignment.",
+          "  - Kiddi: Password-based file & directory encrypter.",
+          "  - Noughts: AI game agent using Alpha-Beta Pruning.",
           "Type 'curl <project_name>' to view repo (e.g. 'curl timecoins')."
         );
         break;
@@ -119,6 +122,23 @@ export default function Hero({ theme }) {
       case "curl codeking":
         response.push("Opening Repository link for CodeKing...");
         window.open("https://github.com/amantaycon/CodeKing", "_blank");
+        break;
+      case "curl socialconnect":
+      case "curl social_network":
+      case "curl webkul":
+        response.push("Opening Repository link for Webkul Social Connect...");
+        window.open("https://github.com/amantaycon/Social_Network_WebKul", "_blank");
+        break;
+      case "curl kiddi":
+      case "curl encryption":
+        response.push("Opening Repository link for Kiddi File Encryption...");
+        window.open("https://github.com/amantaycon/Kiddi-file-encryption-base-on-password-", "_blank");
+        break;
+      case "curl noughts":
+      case "curl crushes":
+      case "curl ai":
+        response.push("Opening Repository link for Noughts & Crushes AI Engine...");
+        window.open("https://github.com/amantaycon/Noughts-and-Crushes-using-Alpha-Beta-Pruning", "_blank");
         break;
       case "system":
         response.push(
