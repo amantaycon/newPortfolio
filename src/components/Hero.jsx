@@ -155,7 +155,7 @@ export default function Hero({ theme }) {
           "CONTACT ENDPOINTS:",
           "  Email: amantaycon@gmail.com",
           "  Phone: +91 9334626132",
-          "  Location: Delhi-NCR, Ghaziabad",
+          "  Location: Noida, Delhi-NCR",
           "  Profiles: github.com/amantaycon | linkedin.com/in/amantaycon"
         );
         break;
@@ -298,8 +298,8 @@ export default function Hero({ theme }) {
           </div>
           <div className="flex flex-col items-center">
             <FiAward className={`text-lg mb-1 ${activeColor}`} />
-            <span className="text-[10px] text-slate-500 uppercase font-bold">Internship</span>
-            <span className="text-sm font-bold text-slate-200">CodeAlpha</span>
+            <span className="text-[10px] text-slate-500 uppercase font-bold">Role</span>
+            <span className="text-xs font-bold text-slate-200">Webkul Trainee</span>
           </div>
         </div>
 
@@ -334,7 +334,7 @@ export default function Hero({ theme }) {
           </div>
           
           <div className="text-[11px] text-slate-500 bg-slate-950 p-2.5 rounded border border-slate-900 flex justify-between items-center font-mono">
-            <span>loc: Ghaziabad, Delhi-NCR</span>
+            <span>loc: Noida, Delhi-NCR</span>
             <span className={`w-2 h-2 rounded-full animate-pulse ${theme === 'matrix' ? 'bg-matrix-green' : 'bg-cyber-cyan'}`}></span>
           </div>
         </div>
